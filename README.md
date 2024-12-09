@@ -36,6 +36,7 @@ Figure 4: Chart displaying out training loss versus our validation loss.
 ```
 
 Figure 5: Summary of the architecture of our model
+
 ![Figure5](./blog_figures/model_summary.png)
 
 ```python
@@ -151,8 +152,3 @@ plt.show()
 ```
 
 //
-
-GITHUB RUBRIC
-- ﻿﻿All necessary code is compiled on 'main'
-﻿﻿- All figures are in blog_figures
-﻿﻿- All figures are explained above
