@@ -13,6 +13,7 @@ Figure 2: Simple chart giving the breakdown of our four classes of test data: Gl
 ![Figure2](./blog_figures/testing_label_count.png)
 
 Figure 3: Simple CNN model example.
+
 ![Figure3](./blog_figures/cnn_example.png)
 
 Figure 4: Chart displaying out training loss versus our validation loss.
