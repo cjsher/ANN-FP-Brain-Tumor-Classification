@@ -106,7 +106,7 @@ Figure 8: An example of some misclassified data from our model
 ```
 
 Figure 9: ROC curve demonstrating the performance of our model
-![Figure9](./blog_figures/misclassification.png)
+![Figure9](./blog_figures/roc_curve.png)
 
 ```python
 from sklearn.metrics import roc_curve, auc
