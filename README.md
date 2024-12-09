@@ -10,18 +10,35 @@ Blog Post:
 
 BLOG FIGURES
 
-Figure 1: Simple chart giving the breakdown of our four classes of training data: Glioma, Meningnoma, Pituitary & No Tumor.
-![Figure1](./blog_figures/training_label_count.png)
+Figure 1: Some sample data from our data set
+![Figure1](./blog_figures/sample_data.png)
 
-Figure 2: Simple chart giving the breakdown of our four classes of test data: Glioma, Meningnoma, Pituitary & No Tumor.
-![Figure2](./blog_figures/testing_label_count.png)
+Figure 2: Simple chart giving the breakdown of our four classes of training data: Glioma, Meningnoma, Pituitary & No Tumor.
+![Figure2](./blog_figures/training_label_count.png)
 
-Figure 3: Simple CNN model example.
+Figure 3: Simple chart giving the breakdown of our four classes of test data: Glioma, Meningnoma, Pituitary & No Tumor.
+![Figure3](./blog_figures/testing_label_count.png)
 
-![Figure3](./blog_figures/cnn_example.png)
+Figure 4: Simple CNN model example.
 
-Figure 4: Chart displaying out training loss versus our validation loss.
-![Figure4](./blog_figures/loss.png)
+![Figure4](./blog_figures/cnn_example.png)
+
+Figure 5: Summary of the architecture of our model
+
+![Figure5](./blog_figures/model_summary.png)
+
+```python
+    # Compile the model
+        model.compile(optimizer='adam',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+    model.summary()
+```
+
+
+Figure 6 : Chart displaying out training loss versus our validation loss.
+![Figure6](./blog_figures/loss.png)
 
 ```python
     # Extract loss values from history
@@ -40,21 +57,9 @@ Figure 4: Chart displaying out training loss versus our validation loss.
     plt.show()
 ```
 
-Figure 5: Summary of the architecture of our model
 
-![Figure5](./blog_figures/model_summary.png)
-
-```python
-    # Compile the model
-        model.compile(optimizer='adam',
-              loss='categorical_crossentropy',
-              metrics=['accuracy'])
-
-    model.summary()
-```
-
-Figure 6: Confusion Matrix representing the classifications generated from our model
-![Figure6](./blog_figures/confusion_matrix.png)
+Figure 7: Confusion Matrix representing the classifications generated from our model
+![Figure7](./blog_figures/confusion_matrix.png)
 
 ```python
     from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
@@ -80,8 +85,7 @@ Figure 6: Confusion Matrix representing the classifications generated from our m
     plt.title("Confusion Matrix")
     plt.show()
 ```
-Figure 7: Some sample data from our data set
-![Figure7](./blog_figures/sample_data.png)
+
 
 ```python
     for images, labels in train_ds.take(1):
