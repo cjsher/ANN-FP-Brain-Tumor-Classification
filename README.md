@@ -13,6 +13,7 @@ Figure 2: Simple chart giving the breakdown of our four classes of test data: Gl
 ![Figure2](./blog_figures/testing_label_count.png)
 
 Figure 3: Simple CNN model example.
+
 ![Figure3](./blog_figures/cnn_example.png)
 
 Figure 4: Chart displaying out training loss versus our validation loss.
@@ -36,6 +37,7 @@ Figure 4: Chart displaying out training loss versus our validation loss.
 ```
 
 Figure 5: Summary of the architecture of our model
+
 ![Figure5](./blog_figures/model_summary.png)
 
 ```python
@@ -74,7 +76,7 @@ Figure 6: Confusion Matrix representing the classifications generated from our m
     plt.title("Confusion Matrix")
     plt.show()
 ```
-Figure 7: Some sample data from out data set
+Figure 7: Some sample data from our data set
 ![Figure7](./blog_figures/sample_data.png)
 
 ```python
@@ -151,8 +153,3 @@ plt.show()
 ```
 
 //
-
-GITHUB RUBRIC
-- ﻿﻿All necessary code is compiled on 'main'
-﻿﻿- All figures are in blog_figures
-﻿﻿- All figures are explained above
