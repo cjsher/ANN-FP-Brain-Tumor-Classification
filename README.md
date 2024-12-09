@@ -74,7 +74,7 @@ Figure 6: Confusion Matrix representing the classifications generated from our m
     plt.title("Confusion Matrix")
     plt.show()
 ```
-Figure 7: Some sample data from out data set
+Figure 7: Some sample data from our data set
 ![Figure7](./blog_figures/sample_data.png)
 
 ```python
