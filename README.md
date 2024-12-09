@@ -2,6 +2,8 @@
 
 Artificial Neural Networks and Deep Learning Final Project
 
+In this project we used convolutional neural networks to classify brain tumors based on a dataset with around 7,000 MRI’s with four different classes: glioma ,meningioma , pituitary , and no tumor.
+
 // 
 
 BLOG FIGURES
