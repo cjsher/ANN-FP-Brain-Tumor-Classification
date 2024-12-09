@@ -5,8 +5,30 @@ Artificial Neural Networks and Deep Learning Final Project
 // 
 
 BLOG FIGURES
+
+Figure 1: Simple chart giving the breakdown of our four classes of training data: Glioma, Meningnoma, Pituitary & No Tumor.
+
+Figure 2: Simple chart giving the breakdown of our four classes of test data: Glioma, Meningnoma, Pituitary & No Tumor.
+
+Figure 3: Simple CNN model example.
+
+Figure 4:
+- Link to Code
+
+Figure 5:
+- Link to Code 
+
+Figure 6:
+- Link to Code
+
+Figure 7:
+- Link to Code
+
+Figure 8:
+- Link to code
 Class Distribution in Training and Validation Sets
   [insert link to that block of code]
+  
   Using our set of warbler species, 'class_names' , and counts of each class' occurences in our spectrograms, we made a two-group bar chart. (X: warbler species, Y: species instances per set)
 
 Training and Validation Accuracy
