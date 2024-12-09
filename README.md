@@ -109,45 +109,45 @@ Figure 9: ROC curve demonstrating the performance of our model
 ![Figure9](./blog_figures/misclassification.png)
 
 ```python
-    from sklearn.metrics import roc_curve, auc
+from sklearn.metrics import roc_curve, auc
 
-    # Step 1: Get true labels and predicted probabilities
-    true_labels = []
-    predicted_probs = []
+# Step 1: Get true labels and predicted probabilities
+true_labels = []
+predicted_probs = []
 
-    for img_batch, label_batch in test_ds:
-        true_labels.extend(label_batch.numpy())
-        predicted_probs.extend(model.predict(img_batch))
+for img_batch, label_batch in test_ds:
+    true_labels.extend(label_batch.numpy())
+    predicted_probs.extend(model.predict(img_batch))
 
-    # Convert to NumPy arrays
-    true_labels = np.array(true_labels)
-    predicted_probs = np.array(predicted_probs)
+# Convert to NumPy arrays
+true_labels = np.array(true_labels)
+predicted_probs = np.array(predicted_probs)
 
-    # Step 2: Compute ROC and AUC for each class
-    n_classes = true_labels.shape[1]  # Number of classes
-    fpr = {}
-    tpr = {}
-    roc_auc = {}
+# Step 2: Compute ROC and AUC for each class
+n_classes = true_labels.shape[1]  # Number of classes
+fpr = {}
+tpr = {}
+roc_auc = {}
 
-    for i in range(n_classes):
-        fpr[i], tpr[i], _ = roc_curve(true_labels[:, i], predicted_probs[:, i])
-        roc_auc[i] = auc(fpr[i], tpr[i])
+for i in range(n_classes):
+    fpr[i], tpr[i], _ = roc_curve(true_labels[:, i], predicted_probs[:, i])
+    roc_auc[i] = auc(fpr[i], tpr[i])
 
-    # Step 3: Plot the ROC curves for each class
-    plt.figure(figsize=(8, 8))
-    for i in range(n_classes):
-        plt.plot(fpr[i], tpr[i], label=f"Class {i} (AUC = {roc_auc[i]:.2f})")
+# Step 3: Plot the ROC curves for each class
+plt.figure(figsize=(8, 8))
+for i in range(n_classes):
+    plt.plot(fpr[i], tpr[i], label=f"Class {i} (AUC = {roc_auc[i]:.2f})")
 
-    # Add diagonal line
-    plt.plot([0, 1], [0, 1], 'k--', label="Random Guess")
+# Add diagonal line
+plt.plot([0, 1], [0, 1], 'k--', label="Random Guess")
 
-    # Plot settings
-    plt.title("ROC Curve and AUC for Each Class")
-    plt.xlabel("False Positive Rate")
-    plt.ylabel("True Positive Rate")
-    plt.legend(loc="lower right")
-    plt.grid()
-    plt.show()
+# Plot settings
+plt.title("ROC Curve and AUC for Each Class")
+plt.xlabel("False Positive Rate")
+plt.ylabel("True Positive Rate")
+plt.legend(loc="lower right")
+plt.grid()
+plt.show()
 ```
 
 //
